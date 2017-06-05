@@ -1,7 +1,37 @@
 # dot_files
 
 ## Tmux configuration file 
+'''bash
+# THEME
+set -g status-bg black
+set -g status-fg white
+set -g window-status-current-bg white
+set -g window-status-current-fg black
+set -g window-status-current-attr bold
+set -g status-interval 60
+set -g status-left-length 30
+set -g status-left '#[fg=green](#S) #(whoami)'
+set -g status-right '#[fg=yellow]#(cut -d " " -f 1-3 /proc/loadavg)#[default] #[fg=white]%H:%M#[default]'
+# command prefix
+set -g prefix C-Space
+bind Space send-prefix
 
+# 256 color support
+set -g default-terminal "screen-256color"
+
+setw -g mouse on
+
+# Vim style pane selection
+bind h select-pane -L
+bind j select-pane -D 
+bind k select-pane -U
+bind l select-pane -R
+
+bind-key J resize-pane -D 5
+bind-key K resize-pane -U 5
+bind-key H resize-pane -L 5
+bind-key L resize-pane -R 5
+'''
 ## Bashrc file
 
 ## Vimrc file
