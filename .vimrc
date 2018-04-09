@@ -16,4 +16,6 @@ set autoindent
 set smartindent
 set ignorecase 
 set showmatch
+set cursorcolumn
+set cursorline
 
