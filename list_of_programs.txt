@@ -1,9 +1,16 @@
 sudo apt-get install git
 
-sudo apt-get install vim-gnome
+sudo apt-get install vim
 
 sudo apt-get install ranger
 
 sudo apt-get install curl
 
 curl -sL https://raw.githubusercontent.com/egalpin/apt-vim/master/install.sh | sh
+
+apt-vim install https://github.com/jiangmiao/auto-pairs.git
+apt-vim install https://github.com/vim-airline/vim-airline-themes.git
+apt-vim install https://github.com/Valloric/YouCompleteMe.git
+apt-vim install https://github.com/scrooloose/nerdtree.git
+apt-vim install https://github.com/rkulla/pydiction.git
+apt-vim install https://github.com/vim-airline/vim-airline.git
