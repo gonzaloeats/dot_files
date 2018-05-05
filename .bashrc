@@ -16,8 +16,8 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=1000000
+HISTFILESIZE=100000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -36,6 +36,7 @@ if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
 fi
 
 # set a fancy prompt (non-color, unless we know we "want" color)
+TERM=xterm-256color
 case "$TERM" in
     xterm-color|*-256color) color_prompt=yes;;
 esac
@@ -76,7 +77,7 @@ esac
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
+    alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
 
     alias grep='grep --color=auto'
@@ -91,7 +92,8 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-
+alias sl='ls'
+alias weather='curl wttr.in/pittsburgh'
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -115,11 +117,57 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-source /opt/ros/kinetic/setup.bash
-unset PYTHONPATH
 
-# sets key bindings for terminal to vi
-set -o vi
+# sets key binding for terminal to vi
+#set -o vi
+#source /opt/ros/kinetic/setup.bash
+export TERM=xterm-256color
+#vim "+runtime syntax/colortest.vim"
+# the create Latex PDFs         
+#PATH=/usr/local/texlive/2017/bin/i386-linux:$PATH 
 
-# added by Miniconda3 4.3.14 installer
+# use folling for kinematics project in work space 2:
+# export GAZEBO_MODEL_PATH=~/catkin_ws2/src/RoboND-Kinematics-Project-Gonzalo/kuka_arm/models
+# source ~/catkin_ws2/devel/setup.bash
+
+# minconda path for creating new env
 export PATH="/home/gonzalo/miniconda3/bin:$PATH"
+
+# use folling for sensor stick perception tutorial:
+#export GAZEBO_MODEL_PATH=~/catkin_ge/src/sensor_stick/models
+#source ~/catkin_ge/devel/setup.bash
+
+#working code
+#source ~/catkin_test4/devel/setup.bash
+#export GAZEBO_MODEL_PATH=~/catkin_test4/src/RoboND-Perception-Project/pr2_robot/models:$GAZEBO_MODEL_PATH
+
+#source ~/catkin_hebi/devel/setup.bash
+
+# Use following for quadrotor walkthrough:
+#export gazebo_model_path=~/catkin_ws/src/robond-perception-project/pr2_robot/models:$gazebo_model_path
+
+#source ~/catkin_ws/devel/setup.bash
+
+#Test Perception Project that works
+#source ~/catkin_works/devel/setup.bash
+#export GAZEBO_MODEL_PATH=~/catkin_works/src/RoboND-Perception-Project/pr2_robot/models:$GAZEBO_MODEL_PATH
+
+
+#the following will increase sensativity of trackpoint
+
+#echo 220 | sudo tee /sys/devices/platform/i8042/serio1/serio2/sensitivity
+
+#source ~/catkin_new/devel/setup.bash
+#export GAZEBO_MODEL_PATH=~/catkin_new/src/RoboND-Perception-Project/pr2_robot/models:$GAZEBO_MODEL_PATH
+
+#source ~/catkin_last/devel/setup.bash
+#export GAZEBO_MODEL_PATH=~/catkin_last/src/RoboND-Perception-Project/pr2_robot/models:$GAZEBO_MODEL_PATH
+
+#Gonzalo's Perception submission to Udacity
+#source ~/catkin_wsg/devel/setup.bash
+#export GAZEBO_MODEL_PATH=~/catkin_wsg/src/RoboND-Perception-Project-Gonzalo/pr2_robot/models:$GAZEBO_MODEL_PATH
+#export LD_LIBRARY_PATH=/usr/local/cuda/lib64/
+#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64:/usr/local/cuda/extras/CUPTI/lib64
+#export CUDA_HOME=/usr/local/cuda
+
+export PATH=/home/gonzalo/miniconda3/bin:/home/gonzalo/bin:/home/gonzalo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/gonzalo/.vimpkg/bin
