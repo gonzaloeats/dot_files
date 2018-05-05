@@ -4,5 +4,6 @@ sudo apt-get install vim-gnome
 
 sudo apt-get install ranger
 
-#copy vim colors
-cp monokai.vim ~/.vim/colors/monokai.vim
+sudo apt-get install curl
+
+curl -sL https://raw.githubusercontent.com/egalpin/apt-vim/master/install.sh | sh
