@@ -3,3 +3,6 @@ sudo apt-get install git
 sudo apt-get install vim-gnome
 
 sudo apt-get install ranger
+
+#copy vim colors
+cp monokai.vim ~/.vim/colors/monokai.vim
