@@ -5,6 +5,7 @@ sudo apt-get install vim
 sudo apt-get install ranger
 
 sudo apt-get install curl
+sudo apt-get install redshift redshift-gtk
 
 curl -sL https://raw.githubusercontent.com/egalpin/apt-vim/master/install.sh | sh
 
