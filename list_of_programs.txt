@@ -5,7 +5,18 @@ sudo apt-get install vim
 sudo apt-get install ranger
 
 sudo apt-get install curl
+
 sudo apt-get install redshift redshift-gtk
+
+sudo apt-get install vlc
+
+sudo apt-get install terminator
+
+sudo apt-get install zeal
+
+sudo apt-get install htop
+
+sudo apt-get install freecad
 
 curl -sL https://raw.githubusercontent.com/egalpin/apt-vim/master/install.sh | sh
 

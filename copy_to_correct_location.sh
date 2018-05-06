@@ -4,5 +4,6 @@ cp .vimrc ~/.vimrc
 cp .bashrc ~/.bashrc
 cp .inputrc ~/.inputrc
 cp redshift.conf ~/.config/redshift.conf
+cp rc.conf ~/.config/ranger/rc.conf
 mkdir -p ~/.vim/colors
 cp monokai.vim ~/.vim/colors/monokai.vim
