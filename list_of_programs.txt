@@ -20,7 +20,7 @@ sudo apt-get install freecad
 
 snap install cloudcompare
 
-sudo apt-get install slack
+sudo snap install slack --classic
 
 curl -sL https://raw.githubusercontent.com/egalpin/apt-vim/master/install.sh | sh
 
