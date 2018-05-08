@@ -18,6 +18,10 @@ sudo apt-get install htop
 
 sudo apt-get install freecad
 
+snap install cloudcompare
+
+sudo apt-get install slack
+
 curl -sL https://raw.githubusercontent.com/egalpin/apt-vim/master/install.sh | sh
 
 apt-vim install https://github.com/jiangmiao/auto-pairs.git
