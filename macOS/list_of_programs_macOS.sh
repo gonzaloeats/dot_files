@@ -16,6 +16,8 @@ brew install spotify
 
 brew cask install slack
 
-brew cask install zoom
+brew cask install zoomus
 
 brew cask install firefox
+
+brew cask install zoc
