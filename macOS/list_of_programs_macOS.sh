@@ -19,3 +19,7 @@ brew cask install slack
 brew cask install zoom
 
 brew cask install firefox
+
+brew cask install iterm2
+
+brew cask install zoc
