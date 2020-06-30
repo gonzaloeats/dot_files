@@ -20,4 +20,9 @@ brew cask install zoomus
 
 brew cask install firefox
 
+<<<<<<< HEAD
+=======
+brew cask install iterm2
+
+>>>>>>> 65e9c4572bebab66254fda30782d5bcaf2a9b601
 brew cask install zoc
