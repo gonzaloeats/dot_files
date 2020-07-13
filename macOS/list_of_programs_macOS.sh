@@ -12,7 +12,7 @@ brew install terminator
 
 brew install htop
 
-brew install spotify
+brew cask install spotify
 
 brew cask install slack
 
