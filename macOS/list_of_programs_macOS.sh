@@ -4,22 +4,24 @@ brew cask install google-chrome
 
 brew install curl
 
-brew cask install vlc
+brew install vlc
 
-brew cask install spectacle
+brew install spectacle
 
 brew install terminator
 
 brew install htop
 
-brew cask install spotify
+brew install spotify
 
-brew cask install slack
+brew install slack
 
-brew cask install zoomus
+brew install zoomus
 
-brew cask install firefox
+brew install firefox
 
-brew cask install iterm2
+brew install iterm2
 
-brew cask install zoc
+brew install zoc
+
+brew install notion
